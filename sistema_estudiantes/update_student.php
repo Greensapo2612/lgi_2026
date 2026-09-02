@@ -36,7 +36,7 @@ $datos = $conn->query($sql);
                     echo "<td>" . $row["Fecha_nacimiento"] . "</td>";
                     echo "<td>" . $row["Activo"] . "</td>";
                     echo "</tr>";
-                    
+
                 }
             }
              ?>
