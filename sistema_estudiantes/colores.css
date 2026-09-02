@@ -1,0 +1,37 @@
+.fondos{
+    background-color: rgb(197, 253, 151)
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.ajuste{
+    transform: translate(30px, 70px);
+}
+.marcos{
+    width: 500px;
+    min-height: 400px;
+    background-image: url(img/marco.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.marco_2{
+    width: 800px;
+    min-height: 600px;
+    background-image: url(img/marco.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
