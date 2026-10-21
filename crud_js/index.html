@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con JS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="js/operaciones.js"></script>
+</head>
+
+<body class="ColorFont">
+
+    <div>
+        <center>
+            <h4>Búsqueda</h4>
+
+            <form id="busqueda">
+                <label for="nombreBuscar">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombreBuscar"
+                    name="Nombre"
+                    placeholder="Ej.: M"
+                >
+
+                <button type="submit">Buscar</button>
+            </form>
+        </center>
+    </div>
+
+    <div>
+        <center>
+            <h1>Listado de estudiantes</h1>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Activo</th>
+                        <th>Eliminar</th>
+                        <th>Seleccionar</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaEstudiantes"></tbody>
+            </table>
+            <h2>Operaciones de Estudiante</h2>
+                    <form id="formAgregar">
+                        <label>ID:</label>
+                        <input type="text" name="ID" id="idSeleccionar" required><br><br>
+                        <br>
+                        <label>Nombre:</label>
+                        <input type="text" name="Nombre" id="nombreAgregar" placeholder="nombre" required><br><br>
+                        <br>
+                        <label>Apellido:</label>
+                        <input type="text" name="Apellido" id="apellidoAgregar" placeholder="apellido" required><br><br>
+                        <br>
+                        <label>Email:</label>
+                        <input type="email" name="Email" id="emailAgregar" placeholder="email" required><br><br>
+                        <br>
+                        <label>Nacimiento:</label>
+                        <input type="date" name="Fecha" id="fechaAgregar"  required><br><br>
+                        <br>
+                        <label>Activo:</label>
+                        <input type="number" name="Activo" id="activoAgregar" max="1" min="0"><br><br>
+                        <br>
+                        <button type="submit" id="btnAgregar">Agregar</button>
+                        <button type="button" id="btnActualizar">Actualizar</button>
+
+                    </form>
+        </center>
+    </div>
+    
+
+</body>
+</html>
